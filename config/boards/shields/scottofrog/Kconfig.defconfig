@@ -1,2 +1,6 @@
-config SHIELD_SCOTTOFROG
-    def_bool $(shields_list_contains,scottofrog)
+if SHIELD_SCOTTOFROG
+
+config ZMK_KEYBOARD_NAME
+    default "ScottoFrog"
+
+endif

@@ -232,7 +232,7 @@
 
         symbol_right_bracket_combo {
             timeout-ms = <COMBO_TIMEOUT>;
-            key-positions = <15 14>;
+            key-positions = <15 13>;
             bindings = <&kp RIGHT_BRACKET>;
             layers = <SYMBOL>;
         };
@@ -243,7 +243,276 @@
             bindings = <&kp RIGHT_BRACE>;
             layers = <SYMBOL>;
         }; 
-    }; 
+
+        // Number combos
+        number_f7_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 1>;
+            bindings = <&kp F7>;
+            layers = <NUMBER>;
+        };
+
+        number_f8_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 2>;
+            bindings = <&kp F8>;
+            layers = <NUMBER>;
+        };
+
+        number_f9_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 3>;
+            bindings = <&kp F9>;
+            layers = <NUMBER>;
+        };
+
+        number_minus_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 4>;
+            bindings = <&kp MINUS>;
+            layers = <NUMBER>;
+        };
+
+        number_f11_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 5>;
+            bindings = <&kp F11>;
+            layers = <NUMBER>;
+        };
+
+        number_f4_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 6>;
+            bindings = <&kp F4>;
+            layers = <NUMBER>;
+        };
+
+        number_f5_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 7>;
+            bindings = <&kp F5>;
+            layers = <NUMBER>;
+        };
+
+        number_f6_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 8>;
+            bindings = <&kp F6>;
+            layers = <NUMBER>;
+        };
+
+        number_f12_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 9>;
+            bindings = <&kp F12>;
+            layers = <NUMBER>;
+        };
+
+        number_f1_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 11>;
+            bindings = <&kp F1>;
+            layers = <NUMBER>;
+        };
+
+        number_f2_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 12>;
+            bindings = <&kp F2>;
+            layers = <NUMBER>;
+        };
+
+        number_f3_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 13>;
+            bindings = <&kp F3>;
+            layers = <NUMBER>;
+        };
+
+        number_equal_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <15 14>;
+            bindings = <&kp EQUAL>;
+            layers = <NUMBER>;
+        };
+
+        // Orange combos
+        orange_esc_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 0>;
+            bindings = <&kp ESC>;
+            layers = <DEFAULT>;
+        };
+
+        orange_home_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 1>;
+            bindings = <&kp HOME>;
+            layers = <DEFAULT>;
+        };
+
+        orange_end_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 2>;
+            bindings = <&kp END>;
+            layers = <DEFAULT>;
+        };
+
+        orange_pause_break_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 3>;
+            bindings = <&kp PAUSE_BREAK>;
+            layers = <DEFAULT>;
+        };
+
+        orange_page_up_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 4>;
+            bindings = <&kp PAGE_UP>;
+            layers = <DEFAULT>;
+        };
+
+        orange_insert_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 5>;
+            bindings = <&kp INSERT>;
+            layers = <DEFAULT>;
+        };
+
+        orange_lctrl_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 6>;
+            bindings = <&kt LCTRL>;
+            layers = <DEFAULT>;
+        };
+
+        orange_lalt_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 7>;
+            bindings = <&kt LALT>;
+            layers = <DEFAULT>;
+        };
+
+        orange_up_arrow_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 8>;
+            bindings = <&kp UP_ARROW>;
+            layers = <DEFAULT>;
+        };
+
+        orange_page_down_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 9>;
+            bindings = <&kp PAGE_DOWN>;
+            layers = <DEFAULT>;
+        };
+
+        orange_delete_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 10>;
+            bindings = <&kp DELETE>;
+            layers = <DEFAULT>;
+        };
+
+        orange_backspace_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 11>;
+            bindings = <&kp BACKSPACE>;
+            layers = <DEFAULT>;
+        };
+
+        orange_left_arrow_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 12>;
+            bindings = <&kp LEFT_ARROW>;
+            layers = <DEFAULT>;
+        };
+
+        orange_down_arrow_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 13>;
+            bindings = <&kp DOWN_ARROW>;
+            layers = <DEFAULT>;
+        };
+
+        orange_right_arrow_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 14>;
+            bindings = <&kp RIGHT_ARROW>;
+            layers = <DEFAULT>;
+        };
+
+        orange_caps_lock_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 19>;
+            bindings = <&kp CAPSLOCK>;
+            layers = <DEFAULT>;
+        };
+
+        // Special combos
+        special_scroll_lock_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 1>;
+            bindings = <&kp SCROLLLOCK>;
+            layers = <SYMBOL>;
+        };
+
+        special_print_screen_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 2>;
+            bindings = <&kp PRINTSCREEN>;
+            layers = <SYMBOL>;
+        };
+
+        special_num_lock_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 4>;
+            bindings = <&kt LOCKING_NUM>;
+            layers = <SYMBOL>;
+        }; 
+
+        special_left_arrow_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 5>;
+            bindings = <&kp LEFT_ARROW>;
+            layers = <SYMBOL>;
+        }; 
+
+        special_left_control_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 6>;
+            bindings = <&kt LCTRL>;
+            layers = <SYMBOL>;
+        };  
+
+        special_left_alt_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 7>;
+            bindings = <&kt LALT>;
+            layers = <SYMBOL>;
+        }; 
+
+        special_right_arrow_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 9>;
+            bindings = <&kp RIGHT_ARROW>;
+            layers = <SYMBOL>;
+        };  
+
+        special_windows_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 10>;
+            bindings = <&kt LGUI>;
+            layers = <SYMBOL>;
+        };  
+
+        special_application_combo {
+            timeout-ms = <COMBO_TIMEOUT>;
+            key-positions = <16 11>;
+            bindings = <&kt K_APP>;
+            layers = <SYMBOL>;
+        };          
+    };
  
     keymap {
         compatible = "zmk,keymap";
@@ -253,16 +522,16 @@
                           &kp F       &kp A &kp R       &kp W &kp P 
                           &kp O       &kp E &kp H       &kp T &kp D 
                           &kp U       &kp I &kp N       &kp S &kp Y 
-                &kp SPACE &tog NUMBER       &tog SYMBOL &kp ENTER   &sk RSHIFT
+                &kp SPACE &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT
             >;
         };
 
         number_layer {
             bindings = <
-                            &kp MINUS &kp KP_N7 &kp KP_N8 &kp KP_N9 &none
-                            &kp SLASH &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp ASTERISK
-                            &kp KP_N0 &kp KP_N1 &kp KP_N2 &kp KP_N3 &none
-                &none       &trans              &trans              &trans        &trans
+                            &kp MINUS   &kp KP_N7 &kp KP_N8  &kp KP_N9 &none
+                            &kp SLASH   &kp KP_N4 &kp KP_N5  &kp KP_N6 &kp ASTERISK
+                            &kp KP_N0   &kp KP_N1 &kp KP_N2  &kp KP_N3 &none
+                &kp SPACE   &to DEFAULT           &to SYMBOL           &trans       &trans
             >;
         }; 
 
@@ -270,8 +539,8 @@
             bindings = <
                           &kp QUESTION      &kp AMPERSAND   &kp ASTERISK         &kp COLON        &kp SEMICOLON
                           &kp SLASH         &kp EXCLAMATION &kp MINUS            &kp AT           &kp UNDERSCORE
-                          &kp DOUBLE_QUOTES &kp LESS_THAN   &kp LEFT_PARENTHESIS &kp LEFT_BRACKET &kp LEFT_BRACE
-                &kp SPACE &trans                            &trans                                &trans         &trans
+                          &kp DOUBLE_QUOTES &kp LESS_THAN   &kp LEFT_PARENTHESIS &kp LEFT_BRACKET &kp LEFT_BRACE 
+                &kp SPACE &to NUMBER                        &to DEFAULT                           &trans         &trans
             >;
         }; 
         
@@ -279,7 +548,7 @@
             bindings = <
                             &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
                             &none        &none        &none        &none        &none 
-                            &kp P        &none        &none        &none        &none 
+                            &kp P        &none        &sys_reset   &none        &none 
                 &bootloader &none                     &none                     &none        &bt BT_CLR
             >;
         };

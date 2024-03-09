@@ -382,14 +382,14 @@
         orange_lctrl_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <16 6>;
-            bindings = <&kt LCTRL>;
+            bindings = <&sk LCTRL>;
             layers = <DEFAULT>;
         };
 
         orange_lalt_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <16 7>;
-            bindings = <&kt LALT>;
+            bindings = <&sk LALT>;
             layers = <DEFAULT>;
         };
 

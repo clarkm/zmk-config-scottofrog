@@ -101,7 +101,7 @@
         letters_windows_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <15 10>;
-            bindings = <&kt LGUI>;
+            bindings = <&sk LGUI>;
             layers = <DEFAULT>;
         };
 
@@ -509,7 +509,7 @@
         special_application_combo {
             timeout-ms = <COMBO_TIMEOUT>;
             key-positions = <16 11>;
-            bindings = <&kt K_APP>;
+            bindings = <&kt LGUI>;
             layers = <SYMBOL>;
         };       
 

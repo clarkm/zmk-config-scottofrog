@@ -28,11 +28,6 @@
             bindings = <&tog LOCK>;
         };
 
-        meta_space_combo {
-            key-positions = <15>;
-            bindings = <&mo DEFAULT_TWO>;
-        };
-
         // Letter combos
         letters_tab_combo {
             timeout-ms = <COMBO_TIMEOUT>;
@@ -527,6 +522,12 @@
         };          
     };
  
+    // Behavior Overrides
+    &lt {
+        tapping-term-ms = <200>;
+        flavor = "hold-preferred";
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -535,7 +536,7 @@
                           &kp F       &kp A &kp R       &kp W &kp P 
                           &kp O       &kp E &kp H       &kp T &kp D 
                           &kp U       &kp I &kp N       &kp S &kp Y 
-                &kp SPACE &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT
+                &lt DEFAULT_TWO SPACE &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT
             >;
         };
 

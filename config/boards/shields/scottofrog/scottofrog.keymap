@@ -3,10 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define NUMBER 1
-#define SYMBOL 2
-#define SETTINGS 3
-#define LOCK 4
+#define DEFAULT_TWO 1
+#define NUMBER 2
+#define SYMBOL 3
+#define SETTINGS 4
+#define LOCK 5
 
 #define COMBO_TIMEOUT 50
 
@@ -25,6 +26,11 @@
             timeout-ms = <50>;
             key-positions = <15 17 19>;
             bindings = <&tog LOCK>;
+        };
+
+        meta_space_combo {
+            key-positions = <15>;
+            bindings = <&mo DEFAULT_TWO>;
         };
 
         // Letter combos
@@ -530,6 +536,15 @@
                           &kp O       &kp E &kp H       &kp T &kp D 
                           &kp U       &kp I &kp N       &kp S &kp Y 
                 &kp SPACE &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT
+            >;
+        };
+
+        default_layer_two {
+            bindings = <
+                            &kp TAB   &kp SINGLE_QUOTE &kp B     &kp M &kp J
+                            &kp Q   &kp Z &kp L     &kp C &kp Z
+                            &sk LGUI      &none &kp K     &kp G &kp X
+                &kp SPACE   &none        &kp COMMA        &kp PERIOD       &kt RSHIFT
             >;
         };
 

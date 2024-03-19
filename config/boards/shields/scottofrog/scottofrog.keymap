@@ -9,6 +9,12 @@
 #define SETTINGS 4
 #define LOCK 5
 
+// Behavior Overrides
+&lt {
+    tapping-term-ms = <200>;
+    flavor = "hold-preferred";
+}; 
+
 #define COMBO_TIMEOUT 50
 
 / {
@@ -520,12 +526,6 @@
             bindings = <&kt RSHIFT>;
             layers = <DEFAULT>;
         };         
-
-        // Behavior Overrides
-        &lt {
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-        }; 
     };
 
     keymap {

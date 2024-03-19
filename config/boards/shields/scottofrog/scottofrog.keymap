@@ -519,17 +519,17 @@
             key-positions = <15 19>;
             bindings = <&kt RSHIFT>;
             layers = <DEFAULT>;
-        };          
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
+        };         
 
         // Behavior Overrides
         &lt {
             tapping-term-ms = <200>;
             flavor = "hold-preferred";
-        };
+        }; 
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
 
         default_layer {
             bindings = <

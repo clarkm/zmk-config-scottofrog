@@ -5,9 +5,10 @@
 #define DEFAULT 0
 #define DEFAULT_TWO 1
 #define NUMBER 2
-#define SYMBOL 3
-#define SETTINGS 4
-#define LOCK 5
+#define NUMBER_TWO 3
+#define SYMBOL 4
+#define SETTINGS 5
+#define LOCK 6
 
 // Behavior Overrides
 &lt {
@@ -536,7 +537,7 @@
                           &kp F       &kp A &kp R       &kp W &kp P 
                           &kp O       &kp E &kp H       &kp T &kp D 
                           &kp U       &kp I &kp N       &kp S &kp Y 
-                &lt DEFAULT_TWO SPACE &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT
+                &lt DEFAULT_TWO SPACE &lt NUMBER_TWO &to NUMBER        &to SYMBOL        &kp ENTER &sk RSHIFT
             >;
         };
 
@@ -551,12 +552,21 @@
 
         number_layer {
             bindings = <
-                            &kp MINUS   &kp N7 &kp N8     &kp N9 &none
-                            &kp SLASH   &kp N4 &kp N5     &kp N6 &kp ASTERISK
-                            &kp N0      &kp N1 &kp N2     &kp N3 &none
+                            &kp ASTERISK   &kp N7 &kp N8     &kp N9 &kp MINUS
+                            &kp SLASH   &kp N4 &kp N5     &kp N6 &kp PLUS
+                            &kp N0      &kp N1 &kp N2     &kp N3 &kp PERIOD
                 &kp SPACE   &to DEFAULT        &to SYMBOL        &trans       &trans
             >;
         }; 
+
+        number_layer_two {
+            bindings = <
+                            &kp ESC   &kp HOME &kp END     &kp PAUSE_BREAK &kp PAGE_UP
+                            &kp INSERT   &sk LCTRL &sk LALT     &kp UP_ARROW &kp PAGE_DOWN
+                            &kp DELETE      &kp BACKSPACE &kp LEFT_ARROW     &kp DOWN_ARROW &kp RIGHT_ARROW
+                &none      &none        &none        &none       &kp CAPSLOCK
+            >;
+        };
 
         symbol_layer {
             bindings = <

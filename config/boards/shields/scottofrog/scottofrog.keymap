@@ -555,7 +555,7 @@
             bindings = <
                             &kp TAB   &kp SINGLE_QUOTE &kp B     &kp M &kp J
                             &kp Q   &kp Z &kp L     &kp C &kp Z
-                            &sk LGUI      &none &kp K     &kp G &kp X
+                            &kt LGUI      &none &kp K     &kp G &kp X
                 &kp SPACE   &none        &kp COMMA        &kp PERIOD       &kt RSHIFT
             >;
         };
